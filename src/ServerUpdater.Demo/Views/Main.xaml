@@ -1,0 +1,53 @@
+﻿<Window x:Class="ServerUpdater.Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServerUpdater.Demo"
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="450" 
+        Width="800"
+        WindowState="Normal"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="NoResize"
+        WindowStyle="None"
+        Style="{DynamicResource Window}"
+        Loaded="OnWindowLoad"
+        Unloaded="OnWindowClose">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Border x:Name="Header" Style="{DynamicResource Header}">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="35" />
+                    <ColumnDefinition Width="35" />
+                    <ColumnDefinition Width="35" />
+                    <ColumnDefinition Width="35" />
+                    <ColumnDefinition Width="35" />
+                </Grid.ColumnDefinitions>
+
+                <StackPanel Grid.Column="0"
+                            HorizontalAlignment="Left"
+                            VerticalAlignment="Center"
+                            Margin="10, 0, 0, 0">
+                    <Label Content="Test 111" 
+                           Style="{DynamicResource Fs-20}" />
+                </StackPanel>
+                
+                <StackPanel Grid.Column="5"
+                            VerticalAlignment="Center">
+                    <Button Content="╳" 
+                            Tag="Light" 
+                            Height="25"
+                            x:Name="ThemeToggler" 
+                            Click="OnThemeToggle" />
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Window>

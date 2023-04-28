@@ -5,7 +5,13 @@
     <Color x:Key="DarkColor">#2C3333</Color>
     <Color x:Key="MutedDarkColor">#2E4F4F</Color>
     <Color x:Key="MutedLightColor">#0E8388</Color>
-    
+
+    <!--solid brushes-->
+    <SolidColorBrush x:Key="LightColorBrush" Color="#CBE4DE" />
+    <SolidColorBrush x:Key="DarkColorBrush" Color="#2C3333" />
+    <SolidColorBrush x:Key="MutedDarkBrush" Color="#2E4F4F" />
+    <SolidColorBrush x:Key="MutedLightBrush" Color="#0E8388" />
+
     <!--font sizes-->
     <Style x:Key="Fs-12" TargetType="{x:Type Control}">
         <Setter Property="FontSize" Value="12"/>
