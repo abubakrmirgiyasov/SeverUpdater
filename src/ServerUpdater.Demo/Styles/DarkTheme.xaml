@@ -1,0 +1,8 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Style TargetType="Window" x:Key="Window">
+        <Setter Property="Background" Value="#2C3333" />
+        <Setter Property="Foreground" Value="#CBE4DE" />
+    </Style>
+    <
+</ResourceDictionary>
